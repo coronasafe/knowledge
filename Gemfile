@@ -3,13 +3,13 @@ ruby '2.7.1'
 source 'https://rubygems.org'
 
 # Ruby on Rails. http://rubyonrails.org
-gem 'rails', '~> 6.0.2.2'
+gem 'rails', '~> 6.0.3.5'
 
 gem 'dotenv-rails', '~> 2.2', groups: %i[development test]
 
 gem 'activeadmin', '~> 2.3.1' # The administration framework for Ruby on Rails applications. https://activeadmin.info
 gem 'attribute_normalizer', '~> 1.2.0.b' # Attribute normalization. TODO: Check to see if version lock can be removed.
-gem 'active_storage_validations', '~> 0.8' # Better validations for active_storage.
+gem 'active_storage_validations', '~> 0.8', '>= 0.8.8' # Better validations for active_storage.
 gem 'fastimage', '~> 2.1'
 gem 'image_processing', '~> 1.2' # Gem to support variants in ActiveStorage
 
@@ -41,7 +41,7 @@ gem 'roadie-rails', '~> 2.0' # CSS management for e-mails.
 gem 'puma', '~> 4.3' # The Puma ruby web server.
 gem 'rack-timeout', '~> 0.6' # Abort requests that are taking too long - recommended by Heroku to use with Puma
 gem 'delayed_job_active_record', '~> 4.1' # Delayed Job for deferring tasks.
-gem 'delayed-web', '~> 0.4' # A rails engine that provides a simple web interface for exposing the Delayed::Job queue.
+gem 'delayed-web', '~> 0.4', '>= 0.4.7' # A rails engine that provides a simple web interface for exposing the Delayed::Job queue.
 gem 'seedbank', '~> 0.4' # Better organized seed data.
 gem 'font-awesome-rails', '~> 4.7' # Icons from font-awesome!
 gem 'friendly_id', '~> 5.3.0' # Slugs for links. http://norman.github.io/friendly_id
@@ -50,7 +50,7 @@ gem 'lita-slack', '= 1.8.0', github: 'litaio/lita-slack', require: false # Lita 
 gem 'kramdown', '~> 2.1' # kramdown is a fast, pure Ruby Markdown superset converter, using a strict syntax definition and supporting several common extensions. http://kramdown.gettalong.org
 gem 'motion-markdown-it', '~> 8.4.1' # Ruby version of Markdown-it (a CommonMark compliant extensible parser).
 gem 'motion-markdown-it-plugins', '~> 8.4.2' # Plugins for motion-markdown-it.
-gem 'gaffe', '~> 1.2' # Custom error pages. https://github.com/mirego/gaffe
+gem 'gaffe', '~> 1.2', '>= 1.2.0' # Custom error pages. https://github.com/mirego/gaffe
 
 gem 'google_calendar', '= 0.6.4', github: 'northworld/google_calendar' # Thin wrapper over Google Calendar API.
 
@@ -75,7 +75,7 @@ gem 'dry-validation', '~> 0.10' # There seems to be a dependency bug in reform's
 gem 'postmark-rails', '~> 0.19' # Official integration library for using Rails and ActionMailer with the Postmark HTTP API.
 # gem 'intercom-rails', '~> 0.4' # The easiest way to install Intercom in a Rails app.
 gem 'intercom', '~> 3.5' # Ruby bindings for the Intercom API
-gem 'jspdf-rails', '~> 1.0' # HTML5 client-side pdf generation - for certificates
+gem 'jspdf-rails', '~> 1.0', '>= 1.0.3' # HTML5 client-side pdf generation - for certificates
 gem 'responders', '~> 3.0' # A set of Rails responders to dry up your application (respond_to / with)
 gem 'rollbar', '~> 2.14' # Exception tracking and logging from Ruby to Rollbar https://rollbar.com
 gem 'humanize', '~> 2.1' # Convert numbers to english words
