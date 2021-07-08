@@ -37,7 +37,7 @@ gem 'bootstrap_form', '~> 4.0' # a Rails form builder that makes it super easy t
 # TODO: The zones list in the gem was outdated.
 # Have updated and submitted a PR (https://github.com/ralovets/valid_url/pull/10). Using a personal fork until it's merged.
 gem 'valid_url', '= 0.0.4', github: 'mahesh-krishnakumar/valid_url', branch: 'patch-1' # New url validataion gem
-gem 'roadie-rails', '~> 2.0' # CSS management for e-mails.
+gem 'roadie-rails', '~> 2.1', '>= 2.1.1' # CSS management for e-mails.
 gem 'puma', '~> 4.3' # The Puma ruby web server.
 gem 'rack-timeout', '~> 0.6' # Abort requests that are taking too long - recommended by Heroku to use with Puma
 gem 'delayed_job_active_record', '~> 4.1' # Delayed Job for deferring tasks.
@@ -60,14 +60,14 @@ gem 'TimezoneParser', '= 0.4.0'
 gem 'videojs_rails', '~> 4.12' # Video JS for Rails 3.1+ Asset Pipeline. https://github.com/seanbehan/videojs_rails
 gem 'react-rails', '~> 2.2' # For automatically transforming JSX and using React in Rails.
 
-gem 'ahoy_matey', '~> 2.0' # Analytics for Rails.
+gem 'ahoy_matey', '~> 2.2', '>= 2.2.1' # Analytics for Rails.
 gem 'uuidtools', '~>2.1' # Required by ahoy_matey for ActiveRecord stores.
 
 gem 'acts-as-taggable-on', github: 'spark-solutions/acts-as-taggable-on', branch: 'fix/rails-6-and-failing-specs' # Tag a single model on several contexts. TODO: remove tracking branch when gem is updated for Rails 6 issues
 gem 'sendinblue', '~> 2.4' # This is SendinBlue provided API V2 Ruby GEM
 gem 'email_inquire', '~> 0.6' # Validate email for format, common typos and one-time email providers
 gem 'titleize', '~> 1.4' # better titleizing, modifies Inflector.titleize from default rails
-gem 'addressable', '~> 2.5' # Addressable is a replacement for the URI implementation that is part of Ruby's standard library. https://github.com/sporkmonger/addressable
+gem 'addressable', '~> 2.8', '>= 2.8.0' # Addressable is a replacement for the URI implementation that is part of Ruby's standard library. https://github.com/sporkmonger/addressable
 gem 'reform', '~> 2.2' # Form objects decoupled from models. http://www.trailblazer.to/gems/reform
 gem 'reform-rails', '~> 0.1'
 gem 'virtus', '~> 1.0' # Required for reform coercion. Attributes on Steroids for Plain Old Ruby Objects
@@ -121,7 +121,7 @@ source 'https://rails-assets.org' do
 end
 
 group :development do
-  gem 'letter_opener_web', '~> 1.3' # A web interface for browsing Ruby on Rails sent emails.
+  gem 'letter_opener_web', '~> 1.4', '>= 1.4.0' # A web interface for browsing Ruby on Rails sent emails.
   gem 'bullet', '~> 6.1' # Detect N+1 queries.
   gem 'web-console', '~> 4.0' # Rails Console on the Browser.
   gem 'listen', '>= 3.0.5', '< 3.2' # The Listen gem listens to file modifications and notifies you about the changes.
@@ -137,11 +137,11 @@ end
 group :test do
   gem 'rspec-retry', '~> 0.5' # Retry randomly failing rspec example. https://github.com/NoRedInk/rspec-retry
   gem 'factory_bot_rails', '~> 5.0' # A library for setting up Ruby objects as test data.
-  gem 'capybara', '~> 3.0' # For RSpec feature tests.
-  gem 'capybara-email', '~> 3.0' # Test ActionMailer and Mailer messages with Capybara
+  gem 'capybara', '~> 3.32', '>= 3.32.1' # For RSpec feature tests.
+  gem 'capybara-email', '~> 3.0', '>= 3.0.1' # Test ActionMailer and Mailer messages with Capybara
   gem 'webdrivers', '~> 4.0' # Keep your Selenium WebDrivers updated automatically.
-  gem 'capybara-screenshot', '~> 1.0' # Save screenshots on failure!
-  gem "cuprite", '~> 0.5', require: false # Headless Chrome driver for Capybara.
+  gem 'capybara-screenshot', '~> 1.0', '>= 1.0.24' # Save screenshots on failure!
+  gem "cuprite", "~> 0.9", require: false # Headless Chrome driver for Capybara.
   gem 'rspec-eventually', '~> 0.2.2' # Rspec helper to match eventually
   gem 'diffy', '~> 3.3' # Easy Diffing in Ruby. https://github.com/samg/diffy
 end
@@ -151,7 +151,7 @@ group :development, :test do
   gem 'rspec-rails', '~> 4.0' # RSpec for Rails 5+.
   gem 'coderay', '~> 1.1' # Pretty syntax highlighting on rspec failure snippets.
   gem 'pry-rails', '~> 0.3.5' # Pry debugger.
-  gem 'webmock', '~> 3.5' # Mocking web requests.
+  gem 'webmock', '~> 3.8', '>= 3.8.3' # Mocking web requests.
   gem 'rubocop', '~> 0.82', require: false # Ruby Style Guide.
   gem 'rubocop-rails', '~> 2.4', require: false # A RuboCop extension focused on enforcing Rails best practices and coding conventions.
   gem 'bundler-audit', '~> 0.5', require: false # Audit gems in gemfile.lock for reported vulnerabilities
