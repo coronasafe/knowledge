@@ -11,7 +11,7 @@ gem 'activeadmin', '~> 2.3.1' # The administration framework for Ruby on Rails a
 gem 'attribute_normalizer', '~> 1.2.0.b' # Attribute normalization. TODO: Check to see if version lock can be removed.
 gem 'active_storage_validations', '~> 0.8' # Better validations for active_storage.
 gem 'fastimage', '~> 2.1'
-gem 'image_processing', '~> 1.2' # Gem to support variants in ActiveStorage
+gem 'image_processing', '~> 1.12', '>= 1.12.2' # Gem to support variants in ActiveStorage
 
 # Use Webpack to manage app-like JavaScript modules in Rails.
 gem 'webpacker', '~> 5.0'
