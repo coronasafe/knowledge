@@ -3,13 +3,13 @@ ruby '2.7.1'
 source 'https://rubygems.org'
 
 # Ruby on Rails. http://rubyonrails.org
-gem 'rails', '~> 6.0.2.2'
+gem 'rails', '~> 6.0.5.1'
 
 gem 'dotenv-rails', '~> 2.2', groups: %i[development test]
 
 gem 'activeadmin', '~> 2.3.1' # The administration framework for Ruby on Rails applications. https://activeadmin.info
 gem 'attribute_normalizer', '~> 1.2.0.b' # Attribute normalization. TODO: Check to see if version lock can be removed.
-gem 'active_storage_validations', '~> 0.8' # Better validations for active_storage.
+gem 'active_storage_validations', '~> 0.8', '>= 0.8.8' # Better validations for active_storage.
 gem 'fastimage', '~> 2.1'
 gem 'image_processing', '~> 1.2' # Gem to support variants in ActiveStorage
 
@@ -21,8 +21,8 @@ gem 'devise', '~> 4.7', '>= 4.7.1' # User auth library.
 gem 'jbuilder', '~> 2.6' # Standard part of Rails, but unused, since we don't have an API.
 gem 'jquery-rails', '~> 4.3' # JQuery on Rails.
 gem 'pg', '~> 1.0' # PostgreSQL support.
-gem 'pg_search', '~> 2.3' # builds ActiveRecord named scopes that take advantage of PostgreSQL's full text search.
-gem 'activerecord-precounter', '~> 0.3' # N+1 count query optimizer for ActiveRecord.
+gem 'pg_search', '~> 2.3', '>= 2.3.2' # builds ActiveRecord named scopes that take advantage of PostgreSQL's full text search.
+gem 'activerecord-precounter', '~> 0.3', '>= 0.3.3' # N+1 count query optimizer for ActiveRecord.
 gem 'sass-rails', '>= 6'
 gem 'slim', '~> 4.0' # Slim templating.
 gem 'turbolinks', '~> 5.0' # Quicker page navigation. https://github.com/turbolinks/turbolinks
@@ -40,8 +40,8 @@ gem 'valid_url', '= 0.0.4', github: 'mahesh-krishnakumar/valid_url', branch: 'pa
 gem 'roadie-rails', '~> 2.0' # CSS management for e-mails.
 gem 'puma', '~> 4.3' # The Puma ruby web server.
 gem 'rack-timeout', '~> 0.6' # Abort requests that are taking too long - recommended by Heroku to use with Puma
-gem 'delayed_job_active_record', '~> 4.1' # Delayed Job for deferring tasks.
-gem 'delayed-web', '~> 0.4' # A rails engine that provides a simple web interface for exposing the Delayed::Job queue.
+gem 'delayed_job_active_record', '~> 4.1', '>= 4.1.4' # Delayed Job for deferring tasks.
+gem 'delayed-web', '~> 0.4', '>= 0.4.7' # A rails engine that provides a simple web interface for exposing the Delayed::Job queue.
 gem 'seedbank', '~> 0.4' # Better organized seed data.
 gem 'font-awesome-rails', '~> 4.7' # Icons from font-awesome!
 gem 'friendly_id', '~> 5.3.0' # Slugs for links. http://norman.github.io/friendly_id
@@ -50,7 +50,7 @@ gem 'lita-slack', '= 1.8.0', github: 'litaio/lita-slack', require: false # Lita 
 gem 'kramdown', '~> 2.1' # kramdown is a fast, pure Ruby Markdown superset converter, using a strict syntax definition and supporting several common extensions. http://kramdown.gettalong.org
 gem 'motion-markdown-it', '~> 8.4.1' # Ruby version of Markdown-it (a CommonMark compliant extensible parser).
 gem 'motion-markdown-it-plugins', '~> 8.4.2' # Plugins for motion-markdown-it.
-gem 'gaffe', '~> 1.2' # Custom error pages. https://github.com/mirego/gaffe
+gem 'gaffe', '~> 1.2', '>= 1.2.0' # Custom error pages. https://github.com/mirego/gaffe
 
 gem 'google_calendar', '= 0.6.4', github: 'northworld/google_calendar' # Thin wrapper over Google Calendar API.
 
@@ -75,13 +75,13 @@ gem 'dry-validation', '~> 0.10' # There seems to be a dependency bug in reform's
 gem 'postmark-rails', '~> 0.19' # Official integration library for using Rails and ActionMailer with the Postmark HTTP API.
 # gem 'intercom-rails', '~> 0.4' # The easiest way to install Intercom in a Rails app.
 gem 'intercom', '~> 3.5' # Ruby bindings for the Intercom API
-gem 'jspdf-rails', '~> 1.0' # HTML5 client-side pdf generation - for certificates
+gem 'jspdf-rails', '~> 1.0', '>= 1.0.3' # HTML5 client-side pdf generation - for certificates
 gem 'responders', '~> 3.0' # A set of Rails responders to dry up your application (respond_to / with)
 gem 'rollbar', '~> 2.14' # Exception tracking and logging from Ruby to Rollbar https://rollbar.com
 gem 'humanize', '~> 2.1' # Convert numbers to english words
 gem 'scarf', '~> 0.2' # A Ruby library for generating initial avatars and identicons.
 gem 'descriptive_statistics', '~> 2.5', require: 'descriptive_statistics/safe' # Used to calculate basic stat measures such as std. deviation (eg: To calculate relative performance of startups)
-gem 'kaminari', '~> 1.0' # Scope & Engine based, clean, powerful, customizable and sophisticated paginator.
+gem 'kaminari', '~> 1.2', '>= 1.2.0' # Scope & Engine based, clean, powerful, customizable and sophisticated paginator.
 gem 'bootstrap4-kaminari-views', '= 1.0.0', github: 'mahesh-krishnakumar/bootstrap4-kaminari-views' # Bootstrap 4 styling for Kaminari gem
 
 # Omniauth providers
@@ -129,7 +129,7 @@ group :development do
   # Go faster, off the Rails - Benchmarks for your whole Rails app
   gem 'derailed_benchmarks', '~> 1.3'
   gem 'stackprof', '~> 0.2' # Required by derailed_benchmarks.
-  gem 'oink', '~> 0.10' # Log parser to identify actions which significantly increase VM heap size
+  gem 'oink', '~> 0.10', '>= 0.10.1' # Log parser to identify actions which significantly increase VM heap size
   gem 'meta_request', '~> 0.4' # Chrome extension for Rails development. https://github.com/dejan/rails_panel
   gem 'graphiql-rails', '~> 1.7'
 end
