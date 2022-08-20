@@ -85,9 +85,9 @@ gem 'kaminari', '~> 1.0' # Scope & Engine based, clean, powerful, customizable a
 gem 'bootstrap4-kaminari-views', '= 1.0.0', github: 'mahesh-krishnakumar/bootstrap4-kaminari-views' # Bootstrap 4 styling for Kaminari gem
 
 # Omniauth providers
-gem 'omniauth-google-oauth2', '~> 0.6' # Oauth2 strategy for Google
-gem 'omniauth-facebook', '~> 6.0' # Facebook OAuth2 Strategy for OmniAuth http://mkdynamic.github.com/omniauth-facebook
-gem 'omniauth-github', '~> 1.2' # GitHub strategy for OmniAuth
+gem 'omniauth-google-oauth2', '~> 0.8', '>= 0.8.0' # Oauth2 strategy for Google
+gem 'omniauth-facebook', '~> 6.0', '>= 6.0.0' # Facebook OAuth2 Strategy for OmniAuth http://mkdynamic.github.com/omniauth-facebook
+gem 'omniauth-github', '~> 2.0', '>= 2.0.0' # GitHub strategy for OmniAuth
 
 gem 'pretender', '~> 0.3.4' # Log in as another user in Rails
 gem 'file_validators', '~> 2.1' # Adds file validators to ActiveModel.
