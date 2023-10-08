@@ -3,11 +3,11 @@ ruby '2.7.1'
 source 'https://rubygems.org'
 
 # Ruby on Rails. http://rubyonrails.org
-gem 'rails', '~> 6.0.2.2'
+gem 'rails', '~> 7.1.0.0'
 
 gem 'dotenv-rails', '~> 2.2', groups: %i[development test]
 
-gem 'activeadmin', '~> 2.3.1' # The administration framework for Ruby on Rails applications. https://activeadmin.info
+gem 'activeadmin', '~> 2.4.0' # The administration framework for Ruby on Rails applications. https://activeadmin.info
 gem 'attribute_normalizer', '~> 1.2.0.b' # Attribute normalization. TODO: Check to see if version lock can be removed.
 gem 'active_storage_validations', '~> 0.8' # Better validations for active_storage.
 gem 'fastimage', '~> 2.1'
@@ -41,7 +41,7 @@ gem 'roadie-rails', '~> 2.0' # CSS management for e-mails.
 gem 'puma', '~> 4.3' # The Puma ruby web server.
 gem 'rack-timeout', '~> 0.6' # Abort requests that are taking too long - recommended by Heroku to use with Puma
 gem 'delayed_job_active_record', '~> 4.1' # Delayed Job for deferring tasks.
-gem 'delayed-web', '~> 0.4' # A rails engine that provides a simple web interface for exposing the Delayed::Job queue.
+gem 'delayed-web', '~> 0.4', '>= 0.4.9' # A rails engine that provides a simple web interface for exposing the Delayed::Job queue.
 gem 'seedbank', '~> 0.4' # Better organized seed data.
 gem 'font-awesome-rails', '~> 4.7' # Icons from font-awesome!
 gem 'friendly_id', '~> 5.3.0' # Slugs for links. http://norman.github.io/friendly_id
