@@ -7,7 +7,7 @@ gem 'rails', '~> 6.0.2.2'
 
 gem 'dotenv-rails', '~> 2.2', groups: %i[development test]
 
-gem 'activeadmin', '~> 2.3.1' # The administration framework for Ruby on Rails applications. https://activeadmin.info
+gem 'activeadmin', '~> 3.1.0' # The administration framework for Ruby on Rails applications. https://activeadmin.info
 gem 'attribute_normalizer', '~> 1.2.0.b' # Attribute normalization. TODO: Check to see if version lock can be removed.
 gem 'active_storage_validations', '~> 0.8' # Better validations for active_storage.
 gem 'fastimage', '~> 2.1'
@@ -130,7 +130,7 @@ group :development do
   gem 'derailed_benchmarks', '~> 1.3'
   gem 'stackprof', '~> 0.2' # Required by derailed_benchmarks.
   gem 'oink', '~> 0.10' # Log parser to identify actions which significantly increase VM heap size
-  gem 'meta_request', '~> 0.4' # Chrome extension for Rails development. https://github.com/dejan/rails_panel
+  gem 'meta_request', '~> 0.7', '>= 0.7.3' # Chrome extension for Rails development. https://github.com/dejan/rails_panel
   gem 'graphiql-rails', '~> 1.7'
 end
 
