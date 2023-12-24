@@ -7,7 +7,7 @@ gem 'rails', '~> 6.0.2.2'
 
 gem 'dotenv-rails', '~> 2.2', groups: %i[development test]
 
-gem 'activeadmin', '~> 2.3.1' # The administration framework for Ruby on Rails applications. https://activeadmin.info
+gem 'activeadmin', '~> 3.2.0' # The administration framework for Ruby on Rails applications. https://activeadmin.info
 gem 'attribute_normalizer', '~> 1.2.0.b' # Attribute normalization. TODO: Check to see if version lock can be removed.
 gem 'active_storage_validations', '~> 0.8' # Better validations for active_storage.
 gem 'fastimage', '~> 2.1'
