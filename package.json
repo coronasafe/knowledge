@@ -16,7 +16,7 @@
     "babel-plugin-react-css-modules": "^3.3.2",
     "babel-plugin-transform-react-remove-prop-types": "^0.4.24",
     "babel-preset-react": "^6.24.1",
-    "bootstrap": "^4.3.1",
+    "bootstrap": "^5.0.0",
     "bs-date-fns": "^0.1.6",
     "bs-fetch": "^0.5.0",
     "bs-platform": "7.2.2",
