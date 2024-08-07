@@ -30,7 +30,7 @@ gem 'uglifier', '~> 4.1' # JavaScript compressor.
 gem 'rest-client', '~> 2.0' # Used to contact Fast Alerts' API.
 gem 'select2-rails', '~> 4.0' # Select2 javascript select box improvement library, using in ActiveAdmin interface.
 
-gem 'bootstrap', '>= 4.3.1' # Official Sass port of Bootstrap.
+gem 'bootstrap', '>= 5.0.0' # Official Sass port of Bootstrap.
 gem 'autoprefixer-rails', '~> 9.4' # Autoprefixer for Ruby and Ruby on Rails.
 gem 'bootstrap_form', '~> 4.0' # a Rails form builder that makes it super easy to create beautiful-looking forms using Bootstrap 4
 
